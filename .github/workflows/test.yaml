@@ -1,0 +1,15 @@
+name: test
+on:   
+  pull_request:
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Show chromedriver version
+        run: |
+          which chromedriver
+          chromedriver --version
+          which chromium-browser
+          chromium-browser --version
+          which google-chrome
+          google-chrome --version
